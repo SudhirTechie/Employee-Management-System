@@ -1,0 +1,21 @@
+
+<div class="container">
+    <table class="table table-bordered bg-green">
+        <tbody>
+        <tr>
+           <th>ID</th>
+           <th>FIRST NAME</th>
+           <th>LAST NAME</th>
+           <th>EMAIL</th> 
+           <th>SALARY</th>
+        </tr>
+        <tr *ngFor = "let emp of employee">
+            <td><a [routerLink]="['/employee',emp.id]">{{emp.id}}</a></td>
+            <td>{{emp.firstName}}</td>
+            <td>{{emp.lastName}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.salary}}</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
